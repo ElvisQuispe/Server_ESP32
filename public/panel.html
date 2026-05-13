@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel ESP32</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="panel">
+
+        <h1>CONTROL DE RELÉS</h1>
+
+        <!-- CERRAR SESIÓN -->
+
+        <button class="cerrar-sesion"
+        onclick="cerrarSesion()">
+
+            CERRAR SESIÓN
+
+        </button>
+
+        <p class="texto-panel">
+            Sistema inteligente ESP32
+        </p>
+
+        <!-- RELÉS -->
+
+        <div class="contenedor-reles">
+
+            <!-- K1 -->
+            <div class="rele-card">
+
+                <h2>K1</h2>
+
+                <div class="estado" id="estado1">
+                    APAGADO
+                </div>
+
+                <button class="on"
+                onclick="encender(1)">
+
+                    ENCENDER
+
+                </button>
+
+                <button class="off"
+                onclick="apagar(1)">
+
+                    APAGAR
+
+                </button>
+
+            </div>
+
+            <!-- K2 -->
+            <div class="rele-card">
+
+                <h2>K2</h2>
+
+                <div class="estado" id="estado2">
+                    APAGADO
+                </div>
+
+                <button class="on"
+                onclick="encender(2)">
+
+                    ENCENDER
+
+                </button>
+
+                <button class="off"
+                onclick="apagar(2)">
+
+                    APAGAR
+
+                </button>
+
+            </div>
+
+            <!-- K3 -->
+            <div class="rele-card">
+
+                <h2>K3</h2>
+
+                <div class="estado" id="estado3">
+                    APAGADO
+                </div>
+
+                <button class="on"
+                onclick="encender(3)">
+
+                    ENCENDER
+
+                </button>
+
+                <button class="off"
+                onclick="apagar(3)">
+
+                    APAGAR
+
+                </button>
+
+            </div>
+
+            <!-- K4 -->
+            <div class="rele-card">
+
+                <h2>K4</h2>
+
+                <div class="estado" id="estado4">
+                    APAGADO
+                </div>
+
+                <button class="on"
+                onclick="encender(4)">
+
+                    ENCENDER
+
+                </button>
+
+                <button class="off"
+                onclick="apagar(4)">
+
+                    APAGAR
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- VOZ -->
+
+        <div class="voz">
+
+            <button class="microfono">
+
+                🎤 ACTIVAR VOZ
+
+            </button>
+
+            <!-- COMANDOS ESCRITOS -->
+
+            <div class="comando-box">
+
+                <input
+                type="text"
+                id="comandoTexto"
+                placeholder="Ejemplo: encender k1 por 10 segundos">
+
+                <button
+                class="enviar-comando"
+                onclick="procesarComandoTexto()">
+
+                    ENVIAR
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

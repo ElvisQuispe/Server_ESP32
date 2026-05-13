@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login ESP32</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="login">
+
+            <h1>ESP32 CONTROL</h1>
+
+            <p class="texto">
+                Iniciar sesión
+            </p>
+
+            <!-- LOGIN -->
+
+            <form id="formulario">
+
+                <input
+                type="text"
+                id="usuario"
+                placeholder="Usuario">
+
+                <div class="password-box">
+
+                    <input
+                    type="password"
+                    id="clave"
+                    placeholder="Contraseña">
+
+                    <span
+                    class="ver-password"
+                    onclick="mostrarClave('clave')">
+
+                        👁
+
+                    </span>
+
+                </div>
+
+                <button type="submit">
+                    INGRESAR
+                </button>
+
+            </form>
+
+            <p id="mensaje"></p>
+
+            <div class="linea"></div>
+
+            <!-- BOTÓN CREAR CUENTA -->
+
+            <button
+            class="abrir-registro"
+            onclick="mostrarRegistro()">
+
+                CREAR CUENTA
+
+            </button>
+
+            <!-- REGISTRO -->
+
+            <div
+            class="registro-box"
+            id="registroBox">
+
+                <h2>
+                    Nueva cuenta
+                </h2>
+
+                <input
+                type="text"
+                id="nuevoUsuario"
+                placeholder="Nuevo usuario">
+
+                <div class="password-box">
+
+                    <input
+                    type="password"
+                    id="nuevaClave"
+                    placeholder="Nueva contraseña">
+
+                    <span
+                    class="ver-password"
+                    onclick="mostrarClave('nuevaClave')">
+
+                        👁
+
+                    </span>
+
+                </div>
+
+                <button
+                class="btn-registro"
+                onclick="registrarUsuario()">
+
+                    REGISTRARSE
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="usuarios.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

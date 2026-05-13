@@ -1,0 +1,457 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #000814,
+    #001d3d,
+    #1b263b
+    );
+}
+
+/* ===== CONTENEDOR ===== */
+
+.contenedor{
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* ===== LOGIN ===== */
+
+.login{
+
+    width: 390px;
+
+    background: #1e293b;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+    0 0 40px rgba(0,0,0,0.6);
+
+    animation: aparecer 1s ease;
+}
+
+/* ===== TITULOS ===== */
+
+h1{
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 52px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 3px;
+}
+
+.texto{
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 22px;
+}
+
+/* ===== INPUTS ===== */
+
+input{
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 18px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-size: 16px;
+
+    background: #e2e8f0;
+}
+
+/* ===== BOTONES ===== */
+
+button{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* ===== BOTÓN LOGIN ===== */
+
+form button{
+
+    background: #2563eb;
+
+    color: white;
+}
+
+form button:hover{
+
+    background: #1d4ed8;
+}
+
+/* ===== MENSAJE ===== */
+
+#mensaje{
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+/* ===== LINEA ===== */
+
+.linea{
+
+    width: 100%;
+
+    height: 1px;
+
+    background: rgba(255,255,255,0.2);
+
+    margin: 25px 0;
+}
+
+/* ===== BOTÓN CREAR CUENTA ===== */
+
+.abrir-registro{
+
+    background: #0f172a;
+
+    color: white;
+}
+
+.abrir-registro:hover{
+
+    background: #334155;
+}
+
+/* ===== PANEL REGISTRO ===== */
+
+.registro-box{
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: 0.5s ease;
+
+    opacity: 0;
+}
+
+.registro-box.activo{
+
+    max-height: 400px;
+
+    opacity: 1;
+
+    margin-top: 20px;
+}
+
+/* ===== TITULO REGISTRO ===== */
+
+.registro-box h2{
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+/* ===== BOTÓN REGISTRO ===== */
+
+.btn-registro{
+
+    background: #06b6d4;
+
+    color: white;
+}
+
+.btn-registro:hover{
+
+    background: #0891b2;
+}
+
+/* ===== PANEL ===== */
+
+.panel{
+
+    width: 100%;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+.texto-panel{
+
+    color: #94a3b8;
+
+    margin-bottom: 40px;
+
+    font-size: 20px;
+}
+
+/* ===== RELÉS ===== */
+
+.contenedor-reles{
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.rele-card{
+
+    width: 250px;
+
+    background: #1e293b;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.4);
+}
+
+.rele-card h2{
+
+    color: white;
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+/* ===== ESTADO ===== */
+
+.estado{
+
+    background: #ef4444;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.estado.activo{
+
+    background: #22c55e;
+}
+
+/* ===== BOTONES RELÉS ===== */
+
+.on{
+
+    background: #22c55e;
+
+    color: white;
+
+    margin-bottom: 12px;
+}
+
+.on:hover{
+
+    background: #16a34a;
+}
+
+.off{
+
+    background: #ef4444;
+
+    color: white;
+}
+
+.off:hover{
+
+    background: #dc2626;
+}
+
+/* ===== VOZ ===== */
+
+.voz{
+
+    margin-top: 50px;
+}
+
+.microfono{
+
+    width: 280px;
+
+    background: linear-gradient(
+    45deg,
+    #7c3aed,
+    #a855f7
+    );
+
+    color: white;
+
+    font-size: 22px;
+
+    box-shadow:
+    0 0 25px rgba(168,85,247,0.6);
+}
+
+.microfono:hover{
+
+    transform: scale(1.05);
+}
+
+/* ===== COMANDOS ===== */
+
+.comando-box{
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.comando-box input{
+
+    width: 350px;
+}
+
+.enviar-comando{
+
+    width: 150px;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+/* ===== CERRAR SESIÓN ===== */
+
+.cerrar-sesion{
+
+    width: 220px;
+
+    margin-top: 20px;
+
+    margin-bottom: 25px;
+
+    background: #dc2626;
+
+    color: white;
+}
+
+.cerrar-sesion:hover{
+
+    background: #b91c1c;
+}
+
+/* ===== ANIMACIÓN ===== */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(-30px);
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+/* ===== PASSWORD ===== */
+
+.password-box{
+
+    position: relative;
+}
+
+.password-box input{
+
+    padding-right: 50px;
+}
+
+.ver-password{
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 15px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    user-select: none;
+}
