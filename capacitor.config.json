@@ -1,0 +1,5 @@
+{
+  "appId": "com.elvis.esp32",
+  "appName": "ESP32 Control",
+  "webDir": "public"
+}

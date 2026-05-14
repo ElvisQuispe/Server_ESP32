@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ESP32 Control</string>
+    <string name="title_activity_main">ESP32 Control</string>
+    <string name="package_name">com.elvis.esp32</string>
+    <string name="custom_url_scheme">com.elvis.esp32</string>
+</resources>

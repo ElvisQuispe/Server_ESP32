@@ -5,11 +5,13 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
     <title>Panel ESP32</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="style.css">
 
 </head>
 
@@ -21,7 +23,8 @@
 
         <!-- CERRAR SESIÓN -->
 
-        <button class="cerrar-sesion"
+        <button
+        class="cerrar-sesion"
         onclick="cerrarSesion()">
 
             CERRAR SESIÓN
@@ -29,7 +32,9 @@
         </button>
 
         <p class="texto-panel">
+
             Sistema inteligente ESP32
+
         </p>
 
         <!-- RELÉS -->
@@ -37,22 +42,28 @@
         <div class="contenedor-reles">
 
             <!-- K1 -->
+
             <div class="rele-card">
 
                 <h2>K1</h2>
 
-                <div class="estado" id="estado1">
+                <div class="estado"
+                id="estado1">
+
                     APAGADO
+
                 </div>
 
-                <button class="on"
+                <button
+                class="on"
                 onclick="encender(1)">
 
                     ENCENDER
 
                 </button>
 
-                <button class="off"
+                <button
+                class="off"
                 onclick="apagar(1)">
 
                     APAGAR
@@ -62,22 +73,28 @@
             </div>
 
             <!-- K2 -->
+
             <div class="rele-card">
 
                 <h2>K2</h2>
 
-                <div class="estado" id="estado2">
+                <div class="estado"
+                id="estado2">
+
                     APAGADO
+
                 </div>
 
-                <button class="on"
+                <button
+                class="on"
                 onclick="encender(2)">
 
                     ENCENDER
 
                 </button>
 
-                <button class="off"
+                <button
+                class="off"
                 onclick="apagar(2)">
 
                     APAGAR
@@ -87,22 +104,28 @@
             </div>
 
             <!-- K3 -->
+
             <div class="rele-card">
 
                 <h2>K3</h2>
 
-                <div class="estado" id="estado3">
+                <div class="estado"
+                id="estado3">
+
                     APAGADO
+
                 </div>
 
-                <button class="on"
+                <button
+                class="on"
                 onclick="encender(3)">
 
                     ENCENDER
 
                 </button>
 
-                <button class="off"
+                <button
+                class="off"
                 onclick="apagar(3)">
 
                     APAGAR
@@ -112,22 +135,28 @@
             </div>
 
             <!-- K4 -->
+
             <div class="rele-card">
 
                 <h2>K4</h2>
 
-                <div class="estado" id="estado4">
+                <div class="estado"
+                id="estado4">
+
                     APAGADO
+
                 </div>
 
-                <button class="on"
+                <button
+                class="on"
                 onclick="encender(4)">
 
                     ENCENDER
 
                 </button>
 
-                <button class="off"
+                <button
+                class="off"
                 onclick="apagar(4)">
 
                     APAGAR
@@ -148,7 +177,7 @@
 
             </button>
 
-            <!-- COMANDOS ESCRITOS -->
+            <!-- COMANDOS -->
 
             <div class="comando-box">
 
@@ -164,6 +193,24 @@
                     ENVIAR
 
                 </button>
+
+            </div>
+
+            <!-- DESCARGAR APK -->
+
+            <div class="apk-box">
+
+                <a
+                href="apk/control-esp32.apk"
+                download>
+
+                    <button class="btn-apk">
+
+                        📱 DESCARGAR APK
+
+                    </button>
+
+                </a>
 
             </div>
 

@@ -455,3 +455,41 @@ form button:hover{
 
     user-select: none;
 }
+/* ================= APK ================= */
+
+.apk-box{
+
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+.btn-apk{
+
+    width: 260px;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: white;
+
+    cursor: pointer;
+
+    background: linear-gradient(45deg,#ff9800,#ff5722);
+
+    box-shadow: 0 0 20px rgba(255,140,0,.5);
+
+    transition: .3s;
+}
+
+.btn-apk:hover{
+
+    transform: scale(1.05);
+}
